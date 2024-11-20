@@ -1,0 +1,102 @@
+.top-links {
+    @include position-on-screen(fixed, $padding-to-screen-edge, auto, 0, $margin-right-to-screen-edge);
+    width: fit-content;
+    background-color: $color-main;
+    padding: $padding-content;
+    border-radius: $border-radius;
+    z-index: 1100;
+    box-shadow: $shadow-md;
+
+    @media screen and (max-width: map-get($media-queries, tablet-min)) {
+        display: none;
+    }
+
+    a {
+        color: $color-secondary;
+        text-decoration: none;
+    }
+
+    i {
+        color: $color-main-light
+    }
+
+    &__links {
+        @include grid(2, 2,$content-gap, $content-gap);
+
+        .top, .bottom {
+            width: 100%;
+            @include flexbox(space-between, center, null, null, $content-gap);
+        }
+
+        .top {
+            grid-row: 1 / 1;
+        }
+
+        .bottom {
+            grid-row: 2 / 2;
+        }
+
+        .top,
+        .bottom {
+            a {
+                font-family: $headingFont;
+            }
+        }
+
+        .right {
+            grid-column: 2 / 3;
+            grid-row: 1 / 3;
+            border-left: 1px solid $color-main-light;
+            @include flexbox(center, center, column, null, $content-gap);
+            padding-left: $content-gap;
+
+            a {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .top {
+        @include flexbox( space-between, center, null, null, $content-gap);
+
+        a:not(:last-child) {
+            padding-right: $padding-content;
+            border-right: 1px solid $color-main-light;
+        }
+
+        a {
+            flex-grow: 1;
+        }
+    }
+
+    .bottom {
+        border-top: 1px solid $color-main-light;
+        padding-top: $content-gap/2;
+    }
+}
+
+
+.test {
+    .container {
+        @include container();
+    }
+}
+
+.test {
+    &__content {
+        background-color: red;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: darkred;
+        }
+    }
+}

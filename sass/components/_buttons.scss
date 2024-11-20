@@ -1,0 +1,171 @@
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: 400;
+    text-transform: uppercase;
+    box-shadow: $shadow-md;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: $color-main;
+    background-color: $color-secondary;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: $shadow-lg;
+    }
+
+    &-primary {
+        color: $color-secondary;
+        background-color: $color-main;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: $shadow-lg;
+        }
+    }
+
+    &-secondary {
+        color: $color-main;
+        background-color: $color-secondary;
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: $shadow-lg;
+        }
+    }
+
+    &-tertiary {
+        color: $color-main;
+        background-color: $color-tertiary;
+        border: 2px solid $color-tertiary;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: $shadow-lg;
+        }
+    }
+
+    &-hollow {
+        color: $color-main;
+        background-color: transparent;
+        border: 2px solid $color-main;
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: $shadow-lg;
+        }
+    }
+
+    &-hollow-tertiary {
+        color: $color-tertiary;
+        background-color: transparent;
+        border: 2px solid $color-tertiary;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: $shadow-lg;
+        }
+    }
+
+    &-hollow-secondary {
+        color: $color-secondary;
+        background-color: transparent;
+        border: 2px solid $color-secondary;
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: $shadow-lg;
+        }
+    }
+
+    &-action {
+        color: $color-secondary;
+        background-color: $color-main;
+        border: 2px solid $color-main;
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: $shadow-lg;
+        }
+    }
+}
+
+.btn-light {
+    background-color: transparent;
+    color: $color-secondary;
+
+    &-hollow {
+        background-color: transparent;
+        border: 2px solid $color-secondary;
+    }
+}
+
+.hot-topic {
+    background-color: $color-action;
+    color: $color-secondary;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-family: $headingFont;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 5px;
+    box-shadow: $shadow-sm;
+}
+
+.btn-fancy {
+    background: none;
+    color: unset;
+    box-shadow: none;
+    position: relative;
+    @include flexbox(center, center, row, null, .2rem);
+    width: fit-content;
+    font-family: $headingFont;
+    text-transform: none;
+    font-size: 25px;
+
+    &:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    span {
+        background-color: $color-tertiary;
+        width: 4px;
+        height: 30px;
+        display: flex;
+        transform: rotate(15deg);
+        position: absolute;
+        left: 0;
+    }
+
+    &:after {
+        content: ">";
+        position: absolute;
+        right: -1.5rem; /* Start outside the button */
+        font-size: 1.5rem; /* Chevron size */
+        font-weight: bold;
+        color: #000;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+    }
+
+    /* Hover to reveal the chevron */
+    &:hover {
+        &:after {
+            opacity: 1;
+            right: 0.5rem; /* Move chevron into place */
+
+        }
+
+        span:last-of-type {
+            //width: 500px;
+        }
+    }
+
+
+}
+

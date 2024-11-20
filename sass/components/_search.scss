@@ -1,0 +1,28 @@
+.search-container {
+    @include flexbox(center, flex-end, row, wrap, $content-gap);
+    width: -webkit-fill-available;
+
+    @media screen and (max-width: map-get($media-queries, tablet-min)) {
+        .btn {
+            width: 100%;
+        }
+    }
+
+    .criteria {
+        @include flexbox(center, start, column, wrap);
+        flex: 1 0 0;
+
+        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid $color-main-dark;
+            border-radius: 5px;
+        }
+    }
+}

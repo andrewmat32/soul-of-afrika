@@ -1,0 +1,40 @@
+section {
+    padding: $padding-section 0;
+
+    @media screen and (max-width: map-get($media-queries, desktop-min)) {
+        height:max-content;
+    }
+
+    .container {
+        @include container;
+    }
+}
+
+section:has(.header__image) {
+    padding: 0;
+
+    .container {
+        padding: $padding-section 0;
+    }
+}
+
+section.section-quarter {
+    height: fit-content;
+}
+
+section.section-full {
+    height: 100vh;
+
+    @media screen and (max-width: map-get($media-queries, desktop-min)) {
+        height: max-content;
+    }
+}
+
+section.section-dynamic {
+    height: auto;
+    padding: $padding-section-dynamic 0;
+}
+
+section.header {
+    background-color: $color-secondary;
+}

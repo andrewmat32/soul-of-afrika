@@ -1,0 +1,16 @@
+.floating-newsletter {
+    @include position-on-screen(fixed, auto, $padding-to-screen-edge, 0, $margin-right-to-screen-edge);
+    background-color: $color-main;
+    padding: $padding-content;
+    border-radius: $border-radius;
+    z-index: 100;
+    box-shadow: $shadow-md;
+
+    @media screen and (max-width: map-get($media-queries, tablet-min)) {
+       display: none;
+    }
+
+    span {
+        color: $color-secondary;
+    }
+}

@@ -1,0 +1,78 @@
+.popup.home-floating-popup {
+    @include position-on-screen(fixed, 35%, 0, $padding-content, 0);
+    width: 260px;
+    height: fit-content;
+    border-radius: $border-radius;
+    background-color: $color-tertiary;
+    z-index: 100;
+    box-shadow: $shadow-md;
+}
+
+.popup {
+    @include top-border;
+
+    &__controls {
+        position: relative;
+
+        .close {
+            @include position-on-screen(absolute, 0, 0, 0, 0);
+            color: $color-secondary;
+            font-size: 25px;
+            cursor: pointer;
+            padding: $padding-content;
+        }
+    }
+
+    &__header {
+        width: inherit;
+
+        .image {
+            width: inherit;
+
+            img {
+                width: inherit;
+                object-fit: cover;
+                object-position: right;
+            }
+        }
+
+        .hot-topic {
+            position: absolute;
+            left: $content-gap;
+            top: $content-gap;
+            margin: 0;
+            box-shadow: $shadow-md;
+            z-index: 4;
+        }
+    }
+
+    &__content {
+        padding: $padding-content;
+        @include flexbox(center, center, column, null);
+
+        .title {
+            font-family: $headingFont;
+            color: $color-main;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            width: -webkit-fill-available;
+        }
+
+        .description {
+            font-family: $font;
+            color: $color-main;
+            font-size: 16px;
+        }
+    }
+
+    &__footer {
+        width: inherit;
+        padding: $padding-content;
+        @include flexbox(center, center, row, null);
+
+        .btn {
+            width: 100%;
+        }
+    }
+}

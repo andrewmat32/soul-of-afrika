@@ -1,0 +1,53 @@
+.content-breaker {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    @include flexbox(null, null, row, null, 0.5rem);
+
+
+    span {
+        display: flex;
+        width: 450px;
+        height: 145%;
+        background: $color-secondary;
+        transform: rotate(15deg);
+        left: -40px;
+        position: relative;
+        top: -40px;
+        margin-right: 64px;
+    }
+
+    span:nth-child(2) {
+        display: flex;
+        width: 170px;
+        height: 140%;
+        background: $color-secondary;
+        transform: rotate(15deg);
+    }
+
+    span:nth-child(3) {
+        display: flex;
+        width: 130px;
+        height: 140%;
+        background: $color-secondary;
+        transform: rotate(15deg);
+    }
+
+    span:nth-child(4) {
+        display: flex;
+        width: 80px;
+        height: 140%;
+        background: $color-secondary;
+        transform: rotate(15deg);
+    }
+
+    span:nth-child(5) {
+        display: flex;
+        width: 30px;
+        height: 140%;
+        background: $color-secondary;
+        transform: rotate(15deg);
+    }
+}

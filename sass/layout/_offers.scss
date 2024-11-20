@@ -1,0 +1,15 @@
+.offers {
+    color: $color-main-dark;
+
+    .product__card {
+        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+            @include grid( 1 );
+        }
+
+        &__item {
+            @media screen and (max-width: map-get($media-queries, tablet-min)) {
+                //width: 368px;
+            }
+        }
+    }
+}

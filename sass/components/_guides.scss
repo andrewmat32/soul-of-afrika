@@ -1,0 +1,81 @@
+.guides {
+    padding-top: $padding-section;
+    padding-bottom: $padding-section;
+    background-color: $color-secondary;
+    color: $color-main-dark;
+
+    @media screen and (min-width: map-get($media-queries, tablet-min)) {
+        padding: $padding-section;
+    }
+
+    .guide-cards {
+        color: $color-main-dark;
+        @include grid( 2 );
+
+        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+            @include grid( 1 );
+        }
+
+        .content-break {
+            @media screen and (min-width: map-get($media-queries, tablet-min)) {
+                grid-column: span 2;
+            }
+        }
+
+        .guide {
+            @include flexbox( null, null, row, null);
+            position: relative;
+            box-shadow: $shadow-md;
+            border-radius: $border-radius;
+            cursor: pointer;
+
+            img {
+                width: 200px;
+                height: -webkit-fill-available;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+                object-position: center;
+                z-index: 3;
+                border-top-left-radius: $border-radius;
+                border-bottom-left-radius: $border-radius;
+            }
+
+            .guide-content {
+                padding: $padding-section;
+                background-color: white;
+                border-top-right-radius: $border-radius;
+                border-bottom-right-radius: $border-radius;
+            }
+
+            &:hover {
+                box-shadow: $shadow-lg;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .hot-topic {
+                position: absolute;
+                right: $content-gap;
+                top: $content-gap;
+                margin: 0;
+                box-shadow: $shadow-md;
+                z-index: 4;
+            }
+
+            @media screen and (max-width: map-get($media-queries, tablet-min)) {
+                @include flexbox( null, null, column, null);
+
+                img {
+                    width: 100%;
+                    height: 200px;
+                    border-top-right-radius: $border-radius;
+                    border-bottom-left-radius: 0;
+                }
+
+                .guide-content {
+                    border-top-right-radius: 0;
+                    border-bottom-left-radius: $border-radius;
+                }
+            }
+        }
+    }
+}

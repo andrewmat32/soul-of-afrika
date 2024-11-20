@@ -1,0 +1,10 @@
+.half-star {
+    font-size: .8rem;
+}
+
+.rating {
+    @include flexbox(flex-start, baseline, row, null);
+    color: $color-tertiary;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}

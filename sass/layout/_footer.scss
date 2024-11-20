@@ -1,0 +1,124 @@
+footer {
+
+    .footer {
+        background: url(/images/giraffe.jpg) no-repeat left center $color-main-light;
+        background-blend-mode: soft-light;
+        background-size: 100%;
+        color: $color-secondary;
+        position: relative;
+
+        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+            background-size: cover;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($color-main, 0.8);
+            pointer-events: none;
+        }
+
+        .container {
+            @include container;
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    .footer-socials {
+        background: $color-main;
+        padding: $padding-content;
+        color: $color-main-light;
+    }
+
+    .footer {
+        &__columns {
+            @include grid( 4 );
+
+            @media screen and (max-width: map-get($media-queries, tablet-min)) {
+                @include grid( 1 );
+            }
+
+            .footer-column {
+                @include flexbox( null, null, column, null, $content-gap );
+                padding: $padding-content;
+                background: rgba( $color-secondary, 0.1 );
+                border-radius: $border-radius;
+                color: $color-secondary;
+                box-shadow: $shadow-sm;
+
+                h3 {
+                    margin-bottom: $content-gap;
+                }
+
+                p {
+                    margin-bottom: $content-gap;
+                }
+
+                a {
+                    color: $color-secondary;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $color-tertiary;
+                    }
+                }
+            }
+        }
+
+        &__social-icons {
+            @include flexbox( center, center, row, null, $content-gap );
+            background: rgba( $color-main, 0.9 );
+
+            @media screen and (max-width: map-get($media-queries, tablet-min)) {
+                @include flexbox( center, center, column, null, $content-gap );
+            }
+
+            a {
+                color: $color-secondary;
+                text-decoration: none;
+                font-size: 1.5rem;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: $color-tertiary;
+                }
+            }
+        }
+    }
+
+
+    .footer-bottom {
+        background: $color-main;
+        padding: $padding-content;
+        color: $color-secondary;
+
+        &__wrapper {
+            @include flexbox( space-between, center, row, null, $content-gap );
+
+            @media screen and (max-width: map-get($media-queries, tablet-min)) {
+                @include flexbox( null, center, column, null, $content-gap );
+            }
+
+            .footer__bottom-links {
+                @media screen and (max-width: map-get($media-queries, tablet-min)) {
+                    text-align: justify;
+                }
+            }
+
+        }
+    }
+}
+
+/*.zebra-transition {
+    position: relative;
+
+    img {
+        position: absolute;
+        filter: brightness(0) saturate(100%) invert(16%) sepia(23%) saturate(2326%) hue-rotate(313deg) brightness(86%) contrast(97%);
+    }
+}*/

@@ -1,0 +1,531 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="fonts/fontAwesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="index.js"></script>
+
+    <title>Soul of Afrika</title>
+</head>
+<body>
+
+<section class="section-dynamic navigation">
+    <div class="navigation__background">
+
+    </div>
+    <div class="container">
+        <div class="navigation__logo">
+            <a href="/"><img src="images/camel-logo.png" alt="Soul of Afrika Logo"></a>
+        </div>
+        <div class="navigation__menu">
+            <nav>
+                <ul>
+                    <li><a class="h4" href="destinations.html">DESTINATIONS</a></li>
+                    <li><a class="h4" href="/destination-types.html">TRIP TYPES</a></li>
+                    <li><a class="h4" href="/listing.html">TRIP FINDER</a></li>
+                    <li><a class="h4" href="/guides.html">Our Famous Guides</a></li>
+                    <li><a class="h4" href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="navigation__burger">
+            <input id='add-item-dropdown' type='checkbox'>
+            <label for="add-item-dropdown" class="burger-menu">
+                <div class="burger-menu-bar"></div>
+                <div class="burger-menu-bar"></div>
+                <div class="burger-menu-bar"></div>
+            </label>
+            <div class="nav-menu__list nav-menu__mobile">
+                <div class="nav-menu__item">
+                    <a class="h4" href="destinations.html">DESTINATIONS</a>
+                </div>
+                <div class="nav-menu__item">
+                    <a class="h4" href="/destination-types.html">TRIP TYPES</a>
+                </div>
+                <div class="nav-menu__item">
+                    <a class="h4" href="/listing.html">TRIP FINDER</a>
+                </div>
+                <div class="nav-menu__item">
+                    <a class="h4" href="/guides.html">Our Famous Guides</a>
+                </div>
+                <div class="nav-menu__item">
+                    <a class="h4" href="/contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-full header header-small">
+    <div class="header__image">
+        <img src="images/header-3.jpg" alt="Safari Adventure">
+        <div class="header__overlay"></div>
+    </div>
+    <div class="container">
+        <div class="header__content">
+            <h1>Find Your Perfect Safari</h1>
+
+            <div class="search-container">
+                <!-- Search by Destination -->
+                <div class="criteria">
+                    <label class="criteria-label" for="destination">Destination</label>
+                    <select class="search-select" id="destination">
+                        <option value="">Select Destination</option>
+                        <option value="Botswana">Botswana</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="Namibia">Namibia</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="Uganda/Rwanda">Uganda/Rwanda</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Zambia">Zambia</option>
+                        <option value="Zimbabwe">Zimbabwe</option>
+                        <option value="Malawi">Malawi</option>
+                        <option value="Congo">Congo</option>
+                        <option value="Mozambique">Mozambique</option>
+                        <option value="Seychelles">Seychelles</option>
+                        <option value="Mauritius">Mauritius</option>
+                        <option value="La Réunion">La Réunion</option>
+                        <option value="Madagascar">Madagascar</option>
+                        <option value="Oman">Oman</option>
+                    </select>
+                </div>
+
+                <!-- Search by Trip Type -->
+                <div class="criteria">
+                    <label class="criteria-label" for="tripType">Trip Type</label>
+                    <select class="search-select" id="tripType">
+                        <option value="">Select Trip Type</option>
+                        <option value="Safari">Safari</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Luxury">Luxury Safari</option>
+                        <option value="Wildlife">Wildlife Exploration</option>
+                    </select>
+                </div>
+
+                <!-- Search by Duration -->
+                <div class="criteria criteria-small">
+                    <label class="criteria-label" for="duration">Duration (Days)</label>
+                    <input type="number" class="search-box" id="duration" min="0" max="14" placeholder="e.g., 7, 10, 14">
+                </div>
+
+                <!-- Search by Difficulty Level -->
+<!--                <div class="criteria">-->
+<!--                    <label class="criteria-label" for="difficulty">Difficulty Level</label>-->
+<!--                    <select class="search-select" id="difficulty">-->
+<!--                        <option value="">Select Difficulty</option>-->
+<!--                        <option value="Easy">Easy</option>-->
+<!--                        <option value="Moderate">Moderate</option>-->
+<!--                        <option value="Challenging">Challenging</option>-->
+<!--                    </select>-->
+
+<!--                </div>-->
+                <!-- Search by Travel Date -->
+                <div class="criteria criteria-small">
+                    <label class="criteria-label" for="travelDate">Travel Date</label>
+                    <input type="date" class="search-box" id="travelDate">
+                </div>
+
+                <!-- Search by  -->
+
+                <!-- Search Button -->
+                <button class="btn btn-tertiary ">Search</button>
+            </div>
+
+<!--            <div class="header__content-images">-->
+<!--                <div class="header__content-images__image">-->
+<!--                    <img src="images/header-3.jpg" alt="African Safari">-->
+<!--                    <span class="btn btn-underlined">DESTINATIONS</span>-->
+<!--                </div>-->
+<!--                <div class="header__content-images__image">-->
+<!--                    <img src="images/header-2.jpg" alt="Safari Magazine">-->
+<!--                    <span class="btn btn-hollow">OUR ONLINE MAGALOG</span>-->
+<!--                </div>-->
+<!--                <div class="header__content-images__image">-->
+<!--                    <img src="images/header-1.jpg" alt="Top Safari Offers">-->
+<!--                    <span class="btn btn-hollow">TOP OFFERS</span>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </div>
+</section>
+
+<section class="section-dynamic product-list">
+    <div class="container">
+        <div class="product-list__filters">
+            <div class="filter">
+                <span class="h3">Duration</span>
+                <ul>
+                    <li><label><input type="checkbox" name="duration" value="all"> All Durations</label></li>
+                    <li><label><input type="checkbox" name="duration" value="1-7"> 1-7 Days</label></li>
+                    <li><label><input type="checkbox" name="duration" value="8-14"> 8-14 Days</label></li>
+                    <li><label><input type="checkbox" name="duration" value="15-21"> 15-21 Days</label></li>
+                    <li><label><input type="checkbox" name="duration" value="22+"> 22+ Days</label></li>
+                </ul>
+            </div>
+
+            <div class="filter">
+                <span class="h3">Difficulty Level</span>
+                <ul>
+                    <li><label><input type="checkbox" name="difficulty" value="all"> All Levels</label></li>
+                    <li><label><input type="checkbox" name="difficulty" value="easy"> Easy</label></li>
+                    <li><label><input type="checkbox" name="difficulty" value="moderate"> Moderate</label></li>
+                    <li><label><input type="checkbox" name="difficulty" value="challenging"> Challenging</label></li>
+                </ul>
+            </div>
+
+            <div class="filter">
+                <span class="h3">Destination</span>
+                <ul>
+                    <li><label><input type="checkbox" name="destination" value="all"> All Destinations</label></li>
+                    <li><label><input type="checkbox" name="destination" value="botswana"> Botswana</label></li>
+                    <li><label><input type="checkbox" name="destination" value="south-africa"> South Africa</label></li>
+                    <li><label><input type="checkbox" name="destination" value="namibia"> Namibia</label></li>
+                    <li><label><input type="checkbox" name="destination" value="tanzania"> Tanzania</label></li>
+                    <li><label><input type="checkbox" name="destination" value="uganda-rwanda"> Uganda/Rwanda</label></li>
+                    <li><label><input type="checkbox" name="destination" value="kenya"> Kenya</label></li>
+                    <li><label><input type="checkbox" name="destination" value="zambia"> Zambia</label></li>
+                    <li><label><input type="checkbox" name="destination" value="zimbabwe"> Zimbabwe</label></li>
+                    <li><label><input type="checkbox" name="destination" value="malawi"> Malawi</label></li>
+                    <li><label><input type="checkbox" name="destination" value="congo"> Congo</label></li>
+                    <li><label><input type="checkbox" name="destination" value="mozambique"> Mozambique</label></li>
+                    <li><label><input type="checkbox" name="destination" value="seychelles"> Seychelles</label></li>
+                    <li><label><input type="checkbox" name="destination" value="mauritius"> Mauritius</label></li>
+                    <li><label><input type="checkbox" name="destination" value="la-reunion"> La Réunion</label></li>
+                    <li><label><input type="checkbox" name="destination" value="madagascar"> Madagascar</label></li>
+                    <li><label><input type="checkbox" name="destination" value="oman"> Oman</label></li>
+                </ul>
+            </div>
+
+            <div class="filter">
+                <span class="h3">Trip Type</span>
+                <ul>
+                    <li><label><input type="checkbox" name="trip-type" value="all"> All Trip Types</label></li>
+                    <li><label><input type="checkbox" name="trip-type" value="fly-in-safaris"> Fly-in Safaris</label></li>
+                    <li><label><input type="checkbox" name="trip-type" value="self-drive-tours"> Self-Drive Tours</label></li>
+                    <li><label><input type="checkbox" name="trip-type" value="small-group-tours"> Small Group Tours</label></li>
+                    <li><label><input type="checkbox" name="trip-type" value="camping-safaris"> Camping Safaris</label></li>
+                    <li><label><input type="checkbox" name="trip-type" value="family-safaris"> Family Safaris</label></li>
+                    <li><label><input type="checkbox" name="trip-type" value="gorilla-tracking"> Gorilla Tracking</label></li>
+                    <li><label><input type="checkbox" name="trip-type" value="sailing"> Sailing</label></li>
+                    <li><label><input type="checkbox" name="trip-type" value="honeymoon-safaris"> Honeymoon Safaris</label></li>
+                    <li><label><input type="checkbox" name="trip-type" value="canoe-safari"> Canoe Safari</label></li>
+                    <li><label><input type="checkbox" name="trip-type" value="walking-safaris"> Walking Safaris</label></li>
+                    <li><label><input type="checkbox" name="trip-type" value="train-travel"> Train Travel</label></li>
+                    <li><label><input type="checkbox" name="trip-type" value="kiliman"> Kiliman</label></li>
+                    <li><label><input type="checkbox" name="trip-type" value="golf-safari"> Golf Safari</label></li>
+                    <li><label><input type="checkbox" name="trip-type" value="dream-beaches"> Dream Beaches</label></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="product-list__listing product-card">
+            <div class="products">
+                <div class="product__card__item">
+                    <div class="product__card__item__content">
+                        <div class="product__card__item__content__image">
+                            <img src="images/offer-1.jpg" alt="Serengeti Migration Safari">
+                        </div>
+                        <span class="h3">Serengeti Migration Safari</span>
+                        <span class="sub-title">Botswana</span>
+                    </div>
+                    <div class="product__card__item__details">
+                        <span class="h4">Experience the magic of the Great Migration with guided tours, luxury camping, and breathtaking wildlife encounters.</span>
+                        <div class="rating">
+                            <span class="rating__star"><i class="fa fa-star"></i></span>
+                            <span class="rating__star"><i class="fa fa-star"></i></span>
+                            <span class="rating__star"><i class="fa fa-star"></i></span>
+                            <span class="rating__star"><i class="fa fa-star"></i></span>
+                            <span class="rating__star"><i class="fa fa-star half-star"></i></span>
+                        </div>
+                        <p><strong>Trip Highlights:</strong></p>
+                        <ul>
+                            <li><i class="fa fa-feather-pointed "></i>&nbsp;Witness the Great Migration</li>
+                            <li><i class="fa fa-feather-pointed "></i>&nbsp;Luxury accommodations in the heart of nature</li>
+                            <li><i class="fa fa-feather-pointed "></i>&nbsp;Expert-guided safari drives</li>
+                        </ul>
+                        <span class="price">From&nbsp;<p>$3,999</p>&nbsp;per person</span>
+                        <p>Join this 14-day journey across Botswana's pristine landscapes, following the awe-inspiring migration of wildebeests and zebras. Explore rich biodiversity, enjoy immersive game drives, and relax in premium lodges for a truly unforgettable experience.</p>
+                        <div class="product__card__item__details__actions">
+                            <a href="/details.html" class="btn btn-primary">View Offer</a>
+<!--                            <a href="#" class="btn btn-hollow">Add to Wishlist</a>-->
+                        </div>
+                    </div>
+                    <p class="hot-topic"><i class="fa fa-newspaper"></i>&nbsp;&nbsp;HOT PICK</p>
+                </div>
+                <div class="product__card__item">
+                    <div class="product__card__item__content">
+                        <div class="product__card__item__content__image">
+                            <img src="images/offer-2.jpg" alt="Okavango Delta Explorer">
+                        </div>
+                        <span class="h3">Okavango Delta Explorer</span>
+                        <span class="sub-title">South Africa</span>
+                    </div>
+                    <div class="product__card__item__details">
+                        <span class="h4">Explore the lush waterways of the Okavango Delta, home to a stunning diversity of wildlife.</span>
+                        <div class="rating">
+                            <span class="rating__star"><i class="fa fa-star"></i></span>
+                            <span class="rating__star"><i class="fa fa-star"></i></span>
+                            <span class="rating__star"><i class="fa fa-star"></i></span>
+                            <span class="rating__star"><i class="fa fa-star half-star"></i></span>
+                            <span class="rating__star"><i class="fa fa-star half-star"></i></span>
+                        </div>
+                        <p><strong>Trip Highlights:</strong></p>
+                        <ul>
+                            <li><i class="fa fa-feather-pointed "></i>&nbsp;Scenic boat rides through the Delta</li>
+                            <li><i class="fa fa-feather-pointed "></i>&nbsp;Close encounters with the Big Five</li>
+                            <li><i class="fa fa-feather-pointed "></i>&nbsp;Stay at eco-lodges surrounded by nature</li>
+                        </ul>
+                        <span class="price">From&nbsp;<p>$3,999</p>&nbsp;per person</span>
+                        <p>This 10-day adventure lets you immerse yourself in the tranquil beauty of the Okavango Delta. Glide along its waterways, spot diverse wildlife, and experience a balance of adventure and relaxation in one of the most unique ecosystems on Earth.</p>
+                        <div class="product__card__item__details__actions">
+                            <a href="/details.html" class="btn btn-primary">View Offer</a>
+<!--                            <a href="#" class="btn btn-hollow">Add to Wishlist</a>-->
+                        </div>
+                    </div>
+                </div>
+                <section class="section-dynamic destinations destinations-cards">
+                        <div class="destination__card d-grid grid-cols-4 gap-4">
+                            <div class="destination__card__item">
+                                <div class="destination__card__item__image">
+                                    <img src="images/destinations/botswana.jpg" alt="Destination">
+                                </div>
+                                <div class="destination__card__item__content">
+                                    <span class="h3">Botswana</span>
+                                </div>
+                            </div>
+
+                            <div class="destination__card__item">
+                                <div class="destination__card__item__image">
+                                    <img src="images/destinations/south-afrika.jpg" alt="Destination">
+                                </div>
+                                <div class="destination__card__item__content">
+                                    <span class="h3">South Africa</span>
+                                </div>
+                            </div>
+
+                            <div class="destination__card__item">
+                                <div class="destination__card__item__image">
+                                    <img src="images/destinations/namibia.jpg" alt="Destination">
+                                </div>
+                                <div class="destination__card__item__content">
+                                    <span class="h3">Namibia</span>
+                                </div>
+                            </div>
+
+                            <div class="destination__card__item">
+                                <div class="destination__card__item__image">
+                                    <img src="images/destinations/tanzania.jpg" alt="Destination">
+                                </div>
+                                <div class="destination__card__item__content">
+                                    <span class="h3">Tanzania</span>
+                                </div>
+                            </div>
+
+                        </div>
+                </section>
+                <div class="product__card__item">
+                    <div class="product__card__item__content">
+                        <div class="product__card__item__content__image">
+                            <img src="images/offer-3.jpg" alt="Lion Safari Adventure">
+                        </div>
+                        <span class="h3">Lion Safari Adventure</span>
+                        <span class="sub-title">Namibia</span>
+                    </div>
+                    <div class="product__card__item__details">
+                        <span class="h4">Get up close with majestic lions and explore the stunning desert landscapes of Namibia.</span>
+                        <div class="rating">
+                            <span class="rating__star"><i class="fa fa-star"></i></span>
+                            <span class="rating__star"><i class="fa fa-star"></i></span>
+                            <span class="rating__star"><i class="fa fa-star"></i></span>
+                            <span class="rating__star"><i class="fa fa-star"></i></span>
+                            <span class="rating__star"><i class="fa fa-star"></i></span>
+                        </div>
+                        <p><strong>Trip Highlights:</strong></p>
+                        <ul>
+                            <li><i class="fa fa-feather-pointed "></i>&nbsp;Day and night game drives</li>
+                            <li><i class="fa fa-feather-pointed "></i>&nbsp;Family-friendly activities</li>
+                            <li><i class="fa fa-feather-pointed "></i>&nbsp;Scenic desert views and wildlife encounters</li>
+                        </ul>
+                        <span class="price">From&nbsp;<p>$3,999</p>&nbsp;per person</span>
+                        <p>Spend 7 unforgettable days in Namibia, exploring its iconic landscapes and encountering lions in their natural habitat. This safari is perfect for families or those looking for a quick yet thrilling wildlife experience.</p>
+                        <div class="product__card__item__details__actions">
+                            <a href="/details.html" class="btn btn-primary">View Offer</a>
+<!--                            <a href="#" class="btn btn-hollow">Add to Wishlist</a>-->
+                        </div>
+                    </div>
+                    <p class="hot-topic"><i class="fa fa-newspaper"></i>&nbsp;&nbsp;HOT PICK</p>
+                </div>
+                <div class="product__card__item">
+                    <div class="product__card__item__content">
+                        <div class="product__card__item__content__image">
+                            <img src="images/offer-4.jpg" alt="Luxury Safari">
+                        </div>
+                        <span class="h3">Luxury Safari</span>
+                        <span class="sub-title">Tanzania</span>
+                    </div>
+                    <div class="product__card__item__details">
+                        <span class="h4">Indulge in ultimate comfort while exploring Tanzania's breathtaking landscapes and wildlife.</span>
+                        <div class="rating">
+                            <span class="rating__star"><i class="fa fa-star"></i></span>
+                            <span class="rating__star"><i class="fa fa-star"></i></span>
+                            <span class="rating__star"><i class="fa fa-star"></i></span>
+                            <span class="rating__star"><i class="fa fa-star"></i></span>
+                            <span class="rating__star"><i class="fa fa-star"></i></span>
+                        </div>
+                        <p><strong>Trip Highlights:</strong></p>
+                        <ul>
+                            <li><i class="fa fa-feather-pointed "></i>&nbsp;Private guided tours of Tanzania's top reserves</li>
+                            <li><i class="fa fa-feather-pointed "></i>&nbsp;Hot air balloon rides over the Serengeti</li>
+                            <li><i class="fa fa-feather-pointed "></i>&nbsp;Luxury accommodations</li>
+                        </ul>
+                        <span class="price">From&nbsp;<p>$3,999</p>&nbsp;per person</span>
+                        <p>This 14-day luxury safari takes you through Tanzania’s most iconic destinations, including the Serengeti and Ngorongoro Crater. Enjoy private tours, breathtaking vistas, and exceptional hospitality at world-class lodges.</p>
+                        <div class="product__card__item__details__actions">
+                            <a href="/details.html" class="btn btn-primary">View Offer</a>
+<!--                            <a href="#" class="btn btn-hollow">Add to Wishlist</a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="product__card__item">
+                    <div class="product__card__item__content">
+                        <div class="product__card__item__content__image">
+                            <img src="images/offer-1.jpg" alt="Serengeti Migration Safari">
+                        </div>
+                        <span class="h3">Serengeti Migration Safari</span>
+                        <span class="sub-title">Uganda/Rwanda</span>
+                    </div>
+                    <div class="product__card__item__details">
+                        <span class="h4">Experience the magic of the Great Migration with guided tours, luxury camping, and breathtaking wildlife encounters.</span>
+                        <p><strong>Trip Highlights:</strong></p>
+                        <ul>
+                            <li><i class="fa fa-feather-pointed "></i>&nbsp;Witness the Great Migration</li>
+                            <li><i class="fa fa-feather-pointed "></i>&nbsp;Luxury accommodations in the heart of nature</li>
+                            <li><i class="fa fa-feather-pointed "></i>&nbsp;Expert-guided safari drives</li>
+                        </ul>
+                        <span class="price">From&nbsp;<p>$3,999</p>&nbsp;per person</span>
+                        <p>Embark on a 10-day adventure that blends the majesty of the Great Migration with the intimacy of gorilla trekking. Stay in luxury tented camps and explore the breathtaking natural wonders of Uganda and Rwanda.</p>
+                        <div class="product__card__item__details__actions">
+                            <a href="/details.html" class="btn btn-primary">View Offer</a>
+<!--                            <a href="#" class="btn btn-hollow">Add to Wishlist</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</section>
+
+<div class="top-links">
+    <div class="container">
+        <div class="top-links__links">
+            <div class="top">
+                <a href="#"><i class="fa fa-phone"></i> &nbsp;+99 (0) 9999-9999-9</a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+            </div>
+            <div class="bottom">
+                <a href="#"><i class="fa fa-envelope-open-text"></i> &nbsp;Subscribe to our Newsletter</a>
+            </div>
+            <div class="right">
+                <a href="#"><i class="fa fa-search"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="scroll-to-top" onclick="topFunction()" id="toTop">
+    <i class="fa fa-chevron-up"></i>
+</div>
+
+<footer>
+    <div class="section-dynamic footer-socials">
+        <div class="container">
+            <div class="footer__social-icons">
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+            </div>
+        </div>
+    </div>
+    <section class="section-dynamic footer">
+        <div class="container">
+            <div class="footer__columns">
+                <div class="footer-column">
+                    <span class="h3">Destinations</span>
+                    <a href="#">All African Countries</a>
+                    <a href="#">Botswana</a>
+                    <a href="#">South Africa</a>
+                    <a href="#">Namibia</a>
+                    <a href="#">Tanzania</a>
+                    <a href="#">Uganda/Rwanda</a>
+                    <a href="#">Kenya</a>
+                    <a href="#">Zambia</a>
+                    <a href="#">Zimbabwe</a>
+                    <a href="#">Malawi</a>
+                    <a href="#">Congo</a>
+                    <a href="#">Mozambique</a>
+                    <a href="#">Seychelles</a>
+                    <a href="#">Mauritius</a>
+                    <a href="#">La Réunion</a>
+                    <a href="#">Madagascar</a>
+                    <a href="#">Oman</a>
+                </div>
+                <div class="footer-column">
+                    <span class="h3">Trip Types</span>
+                    <a href="#">All Safaris</a>
+                    <a href="#">Fly-in Safaris</a>
+                    <a href="#">Self-Drive Tours</a>
+                    <a href="#">Small Group Tours</a>
+                    <a href="#">Camping Safaris</a>
+                    <a href="#">Family Safaris</a>
+                    <a href="#">Gorilla Tracking</a>
+                    <a href="#">Sailing</a>
+                    <a href="#">Honeymoon Safaris</a>
+                    <a href="#">Canoe Safari</a>
+                    <a href="#">Walking Safaris</a>
+                    <a href="#">Train Travel</a>
+                    <a href="#">Kilimanjaro Climb</a>
+                    <a href="#">Golf Safari</a>
+                    <a href="#">Dream Beaches</a>
+                </div>
+                <div class="footer-column">
+                    <span class="h3">Latest News</span>
+                    <a href="#">Top Offers</a>
+                    <a href="#">News</a>
+                    <a href="#">Exhibitions & Events</a>
+                    <a href="#">Blog & Guides</a>
+                    <a href="#">Travel Stories</a>
+                    <a href="#">Webinars</a>
+                    <a href="#">Podcasts</a>
+                    <a href="#">Videos</a>
+                    <a href="#">Subscribe to Newsletter</a>
+                    <a href="#">Order Catalog</a>
+                    <a href="#">Downloads</a>
+                </div>
+                <div class="footer-column footer-contact">
+                    <span class="h3">Get in Touch</span>
+                    <p>Soul of Afrika Ltd</p>
+                    <p>123 Safari Road<br>12345 Adventure City<br>Africa</p>
+                    <p>Tel: +99 (0) 9999-9999-9<br>Fax: +99 (0) 9999-9999-9</p>
+                    <p>Email: <a href="mailto:info@soulofafrika.com">info@soulofafrika.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-dynamic footer-bottom">
+        <div class="container">
+            <div class="footer-bottom__wrapper">
+                <p class="h5">&copy; 2024 | Soul of Afrika</p>
+                <div class="footer__bottom-links">
+                    <a href="#">Imprint</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a> |
+                    <a href="#">FAQ</a> | <a href="#">Important Travel Information</a> | <a href="#">Newsletter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+
+</body>
+</html>

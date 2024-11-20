@@ -1,0 +1,127 @@
+.main-cta {
+    background-color: $color-secondary;
+    .container {
+        @include container;
+        @include flexbox( center, center, row, null, 2rem );
+
+        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+            @include flexbox( center, center, column, null, 2rem );
+
+            .right-container {
+                width: -webkit-fill-available;
+
+                .btn {
+                    width: -webkit-fill-available;
+                }
+            }
+        }
+    }
+}
+
+.main-cta {
+    .left-container {
+        flex: 0 0 50%;
+        position: relative;
+    }
+}
+
+.main-cta {
+    &__image {
+        @include top-border;
+        transition: transform 0.3s ease-in-out;
+        position: relative;
+
+        img {
+            max-height: 600px;
+            object-fit: cover;
+            width: -webkit-fill-available;
+            object-position: top;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        &:hover {
+            transform: scale(1.01);
+        }
+
+        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+            img {
+                max-height: 300px;
+            }
+        }
+    }
+
+    &__content {
+        @include flexbox( center, center, column, null, 2rem );
+
+        p {
+            text-indent: 2rem;
+        }
+    }
+}
+
+.main-cta.main-cta-narrow {
+    .left-container {
+        flex: 1;
+    }
+
+    .right-container {
+        flex: 0 0 50%;
+    }
+
+    img {
+        max-height: 300px;
+        width: 100%;
+
+        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+           max-height: fit-content;
+        }
+    }
+}
+
+.main-cta + .main-cta {
+    //padding: $padding-content 0;
+}
+
+.main-cta.main-cta-dark {
+    background-color: $color-main-dark;
+    color: $color-secondary;
+
+    .right-container {
+        width: fit-content;
+    }
+
+    .left-container,
+    .right-container {
+        flex: 0;
+    }
+
+    .main-cta__image {
+        transition: none;
+
+        &:before {
+            content: none;
+        }
+    }
+    img {
+        border: none;
+        height: 200px;
+        width: 100%;
+        object-fit: contain;
+        box-shadow: none
+    }
+
+    &:hover {
+        transform: none;
+    }
+
+    &__content {
+        @include flexbox( center, center, column, null, 2rem );
+
+        p {
+            text-indent: 2rem;
+        }
+    }
+
+}

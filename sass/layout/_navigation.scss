@@ -1,0 +1,274 @@
+.navigation {
+    position: relative;
+    z-index: 1000;
+
+    .container {
+        @include container;
+        @include flexbox(space-between, flex-start, null, null);
+
+        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+            @include flexbox(space-between, flex-start, null, null);
+        }
+    }
+}
+
+.section-dynamic.navigation {
+    padding: var(--padding-section) 0;
+}
+
+.navigation + .header {
+    background-color: transparent;
+
+    @media screen and (max-width: map-get($media-queries, tablet-min)) {
+        height: 100vh;
+    }
+}
+
+.navigation {
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 150px;
+        //@include smoothFadingGradient(to bottom, 168, 73, 55);
+
+        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+            display: none;
+        }
+    }
+
+    &__logo {
+        position: relative;
+        display: inline-block;
+        width: 15%;
+        @include flexbox(center, center, null, null);
+        z-index: 1;
+
+        a {
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 60px;
+                filter: blur(25px);
+                z-index: -1;
+                @include smoothFadingGradient(to top, 245, 245, 245);
+            }
+        }
+
+        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+            width: unset;
+        }
+
+        //&::after {
+        //    content: '';
+        //    position: absolute;
+        //    bottom: 0;
+        //    left: 50%;
+        //    transform: translateX(-50%);
+        //    width: 100%;
+        //    height: 2px;
+        //    background: linear-gradient(to right, transparent, $color-main-dark, transparent);
+        //}
+
+        img {
+            display: block;
+            height: 60px;
+            filter: $filter-color-main;
+            //position: absolute;
+        }
+    }
+
+    &__menu {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+
+        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+            background-color: $color-secondary;
+        }
+
+        nav {
+            ul {
+                @include flexbox();
+
+                @media screen and (max-width: map-get($media-queries, tablet-min)) {
+                    @include flexbox(center, flex-end, column, null);
+                    margin-right: 20px;
+                    margin-top: 4.5rem;
+                }
+            }
+
+            li {
+                margin-left: $content-gap;
+                position: relative;
+                color: $color-main;
+                text-transform: uppercase;
+
+                @include underline-hover($color-main);
+            }
+
+            a {
+                @include typography('buttons', 'small', 700, $color-main, uppercase);
+                text-decoration: none;
+                cursor: pointer;
+
+                @media screen and (max-width: map-get($media-queries, tablet-min)) {
+                    font-size: 1.3rem;
+                }
+            }
+
+            @media screen and (max-width: map-get($media-queries, tablet-min)) {
+                display: none;
+            }
+        }
+    }
+
+    &__burger {
+        height: fit-content;
+
+        .burger-menu {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: .5rem;
+            transition: all 0.1s ease;
+            z-index: 1100;
+            padding: .6rem 0;
+
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 60px;
+                filter: blur(25px);
+                z-index: -1;
+                @include smoothFadingGradient(to top, 245, 245, 245);
+            }
+
+            i {
+                font-size: 2rem;
+            }
+
+            @media screen and (max-width: map-get($media-queries, tablet-min)) {
+                @include flexbox(null, null, null, null, 10px);
+            }
+
+            div[class^="burger-menu-"] {
+                height: 2px;
+                width: 2rem;
+                background-color: $color-main-dark;
+                transition: all 0.1s ease;
+                z-index: 1100;
+            }
+        }
+
+        .nav-menu__mobile {
+            display : none;
+            position: absolute;
+            background-color: $color-secondary;
+            width: 100%;
+            height: 100vh;
+            right: 0;
+            top: 0;
+            padding: 2rem;
+            padding-top: 3rem;
+            z-index: 100;
+
+            .nav-menu__dropdown,
+            .nav-menu__item {
+
+                a {
+                    font-family: $font;
+                    font-size: 1.5rem;
+                    color: $color-main-dark;
+                    text-transform: uppercase;
+                    padding: .5rem 0;
+                }
+            }
+
+            .nav-menu__item {
+                padding: 1rem 0;
+            }
+
+            .nav-menu__dropdown-title {
+                //@include typography( content, largest, 400, var(--neutral-900) );
+                color: $color-main;
+            }
+
+            [type="checkbox"]:checked {
+                & ~ .nav-mobile_dropdown {
+                    @include flexbox(null, null, column, null);
+                }
+
+                & ~ .nav-menu__dropdown-title {
+                    i {
+                        transform: rotate(180deg);
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+            [type="checkbox"]:not(:checked),
+            [type="checkbox"]:checked {
+                position : absolute;
+                left     : -9999px;
+            }
+            [type="checkbox"]:not(:checked) + label,
+            [type="checkbox"]:checked + label {
+                position     : relative;
+                cursor       : pointer;
+            }
+        }
+
+        [type="checkbox"]:checked {
+            & ~ .nav-menu__mobile {
+                display : block;
+            }
+
+            & ~ .burger-menu {
+                transition: all 0.1s ease;
+                padding: 1rem 0;
+                margin-right: 16px;
+                margin-top: 10px;
+
+                .burger-menu-bar:nth-child(1) {
+                    height: 2px;
+                    width: 2rem;
+                    background-color: $color-main-dark;
+                    transform: rotate(45deg);
+                    position: absolute;
+                    transition: all 0.1s ease;
+                }
+
+                .burger-menu-bar:nth-child(2) {
+                    display: none;
+                    transition: all 0.1s ease;
+                }
+
+                .burger-menu-bar:nth-child(3) {
+                    height: 2px;
+                    width: 2rem;
+                    background-color: $color-main-dark;
+                    transform: rotate(-45deg);
+                    transition: all 0.1s ease;
+                }
+            }
+        }
+        [type="checkbox"]:not(:checked),
+        [type="checkbox"]:checked {
+            position : absolute;
+            left     : -9999px;
+        }
+        [type="checkbox"]:not(:checked) + label,
+        [type="checkbox"]:checked + label {
+            position     : relative;
+            cursor       : pointer;
+        }
+    }
+}

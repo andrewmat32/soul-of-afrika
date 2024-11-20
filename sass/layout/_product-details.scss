@@ -1,0 +1,236 @@
+.product-details {
+    background-color: $color-secondary;
+    color: $color-main-dark;
+
+    .container {
+        position: relative;
+    }
+
+    .main__product__title {
+        @include flexbox(null, center, column, null, $content-gap);
+        margin-bottom: 5rem;
+
+        h1,
+        p {
+            text-shadow: $shadow-lg;
+        }
+
+        .sub-title {
+            font-size: 5rem;
+            background-color: $color-tertiary;
+            background-blend-mode: overlay;
+            border-radius: $border-radius;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+            transition: all 0.2s;
+        }
+    }
+
+    .main__product__container {
+        @include flexbox(null, null, row, null, $content-gap);
+        padding-bottom: $content-gap;
+        color: $color-main-dark;
+
+        &-images {
+            flex: 1 0 0 ;
+
+            .product-image {
+                position: relative;
+
+                //img {
+                //    max-width: 100%;
+                //    height: 480px;
+                //    box-shadow: var(--shadow-md);
+                //    border-radius: var(--border-radius);
+                //    transition: all 0.3s ease-in-out;
+                //}
+
+                img {
+                    max-width: 100%;
+                    height: 280px;
+                    box-shadow: var(--shadow-md);
+                    border-radius: var(--border-radius);
+                    transition: all 0.3s ease-in-out;
+                }
+
+                .image-navigation {
+                    @include absCenter;
+                    @include flexbox(space-between, center, row, null);
+                    font-family: $accentFont;
+                    color: $color-secondary;
+                    width: 100%;
+                    padding: 0 $padding-section;
+                }
+            }
+
+        }
+
+        &-details {
+            flex: 1 0 0;
+
+            .trip-highlights {
+                i {
+                    color: $color-action;
+                }
+            }
+
+            .product-details-description {
+                margin-top: $content-gap;
+                font-size: 1.2rem;
+                line-height: 1.5;
+            }
+
+            &__price {
+                @include flexbox(null, baseline, column, null, $content-gap);
+                margin-top: 2rem;
+                font-size: 2rem;
+                width: 100%;
+
+                &__breakdown {
+                    @include flexbox(null, baseline, column, null);
+                    width: 100%;
+
+                    &__item {
+                        background: $color-secondary;
+                        margin: 5px 0;
+                        padding: 5px 10px;
+                        border-left: 4px solid $color-action;
+                        font-size: 0.9rem;
+                        width: 100%;
+                        box-shadow: $shadow-sm;
+                    }
+                }
+
+                &__amount {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    margin-right: 0.5em;
+                }
+
+                &__note {
+                    font-size: .8rem;
+                    color: $color-main-dark;
+                }
+            }
+        }
+
+        .rating {
+            @include flexbox(null, baseline, column, null);
+
+            .rating__text {
+                color: $color-main-dark;
+            }
+        }
+
+        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+            @include flexbox(null, null, column, null, $content-gap);
+        }
+    }
+
+    .book-now-section {
+        @include flexbox(space-between, flex-start, column, null, $content-gap);
+        padding: $padding-section;
+        background-color: $color-tertiary;
+        border-radius: $border-radius;
+        box-shadow: $shadow-md;
+        //position: absolute;
+        top: 0;
+        right: 0;
+        transition: all 0.3s ease-in-out;
+
+        .btn {
+            width: 100%;
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 1rem;
+            border-radius: $border-radius;
+            background-color: $color-main;
+            color: $color-secondary;
+            box-shadow: $shadow-md;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                transform: translateY(0);
+            }
+        }
+    }
+
+    .book-now-section:hover {
+        box-shadow: $shadow-lg;
+        transition: all 0.3s ease-in-out;
+    }
+
+
+    .content-break {
+        padding: $padding-section;
+    }
+
+    .extra-texts {
+        .text {
+            @include flexbox(null, center, row, null, $content-gap);
+            padding: $padding-section;
+            transition: all 0.3s ease-in-out;
+            opacity: 1;
+
+            @media screen and (max-width: map-get($media-queries, tablet-min)) {
+                @include flexbox(null, center, column, null);
+            }
+
+            &:hover {
+                background-color: $color-tertiary;
+                border-radius: $border-radius;
+                box-shadow: $shadow-md;
+                transition: all 0.3s ease-in-out;
+
+                i {
+                    background-color: $color-tertiary;
+                    text-shadow: $shadow-lg;
+                }
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            //background-color: rgba($color-main-light, 0.9);
+            //padding: 1rem;
+            //color: $color-secondary;
+            //text-shadow: $shadow-lg;
+            border-radius: $border-radius;
+
+        }
+
+        i {
+            @include flexbox(center, center, row, null);
+            font-size: 3rem;
+            min-width: 70px;
+            background-color: $color-main-dark;
+            color: $color-secondary;
+            padding: 0.5rem;
+            border-radius: $border-radius;
+
+            @media screen and (max-width: map-get($media-queries, tablet-min)) {
+                font-size: 2rem;
+            }
+        }
+    };
+}
+
+.extra-information {
+    @include flexbox(null, null, row, null);
+    margin-top: $content-gap;
+    padding: $padding-section;
+    background-color: $color-tertiary;
+    border-radius: $border-radius;
+    box-shadow: $shadow-md;
+
+    @media screen and (max-width: map-get($media-queries, tablet-min)) {
+        @include flexbox(null, null, column, null);
+    }
+
+    .left-container {
+        flex: 1 0 0;
+    }
+
+    .right-container {
+        flex: 1 0 0;
+    }
+}

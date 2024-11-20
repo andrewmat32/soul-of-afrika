@@ -1,0 +1,283 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="fonts/fontAwesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="index.js"></script>
+
+    <title>Soul of Afrika</title>
+</head>
+<body>
+
+<section class="section-dynamic navigation">
+    <div class="navigation__background">
+
+    </div>
+    <div class="container">
+        <div class="navigation__logo">
+            <a href="/"><img src="images/camel-logo.png" alt="Soul of Afrika Logo"></a>
+        </div>
+        <div class="navigation__menu">
+            <nav>
+                <ul>
+                    <li><a class="h4" href="destinations.html">DESTINATIONS</a></li>
+                    <li><a class="h4" href="/destination-types.html">TRIP TYPES</a></li>
+                    <li><a class="h4" href="/listing.html">TRIP FINDER</a></li>
+                    <li><a class="h4" href="/guides.html">Our Famous Guides</a></li>
+                    <li><a class="h4" href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="navigation__burger">
+            <input id='add-item-dropdown' type='checkbox'>
+            <label for="add-item-dropdown" class="burger-menu">
+                <div class="burger-menu-bar"></div>
+                <div class="burger-menu-bar"></div>
+                <div class="burger-menu-bar"></div>
+            </label>
+            <div class="nav-menu__list nav-menu__mobile">
+                <div class="nav-menu__item">
+                    <a class="h4" href="destinations.html">DESTINATIONS</a>
+                </div>
+                <div class="nav-menu__item">
+                    <a class="h4" href="/destination-types.html">TRIP TYPES</a>
+                </div>
+                <div class="nav-menu__item">
+                    <a class="h4" href="/listing.html">TRIP FINDER</a>
+                </div>
+                <div class="nav-menu__item">
+                    <a class="h4" href="/guides.html">Our Famous Guides</a>
+                </div>
+                <div class="nav-menu__item">
+                    <a class="h4" href="/contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-full header header-small">
+    <div class="header__image">
+        <img src="images/offer-4.jpg" alt="Safari Adventure">
+        <div class="header__overlay"></div>
+    </div>
+    <div class="container">
+        <div class="header__content">
+            <h1>Find Your Perfect Safari</h1>
+
+            <div class="search-container">
+                <!-- Search by Destination -->
+                <div class="criteria">
+                    <label class="criteria-label" for="destination">Destination</label>
+                    <select class="search-select" id="destination">
+                        <option value="">Select Destination</option>
+                        <option value="Botswana">Botswana</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="Namibia">Namibia</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="Uganda/Rwanda">Uganda/Rwanda</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Zambia">Zambia</option>
+                        <option value="Zimbabwe">Zimbabwe</option>
+                        <option value="Malawi">Malawi</option>
+                        <option value="Congo">Congo</option>
+                        <option value="Mozambique">Mozambique</option>
+                        <option value="Seychelles">Seychelles</option>
+                        <option value="Mauritius">Mauritius</option>
+                        <option value="La Réunion">La Réunion</option>
+                        <option value="Madagascar">Madagascar</option>
+                        <option value="Oman">Oman</option>
+                    </select>
+                </div>
+
+                <!-- Search by Trip Type -->
+                <div class="criteria">
+                    <label class="criteria-label" for="tripType">Trip Type</label>
+                    <select class="search-select" id="tripType">
+                        <option value="">Select Trip Type</option>
+                        <option value="Safari">Safari</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Luxury">Luxury Safari</option>
+                        <option value="Wildlife">Wildlife Exploration</option>
+                    </select>
+                </div>
+
+                <!-- Search by Duration -->
+                <div class="criteria criteria-small">
+                    <label class="criteria-label" for="duration">Duration (Days)</label>
+                    <input type="number" class="search-box" id="duration" min="0" max="14"
+                           placeholder="e.g., 7, 10, 14">
+                </div>
+
+                <!-- Search by Difficulty Level -->
+                <!--                <div class="criteria">-->
+                <!--                    <label class="criteria-label" for="difficulty">Difficulty Level</label>-->
+                <!--                    <select class="search-select" id="difficulty">-->
+                <!--                        <option value="">Select Difficulty</option>-->
+                <!--                        <option value="Easy">Easy</option>-->
+                <!--                        <option value="Moderate">Moderate</option>-->
+                <!--                        <option value="Challenging">Challenging</option>-->
+                <!--                    </select>-->
+
+                <!--                </div>-->
+                <!-- Search by Travel Date -->
+                <div class="criteria criteria-small">
+                    <label class="criteria-label" for="travelDate">Travel Date</label>
+                    <input type="date" class="search-box" id="travelDate">
+                </div>
+
+                <!-- Search by  -->
+
+                <!-- Search btn btn-primary -->
+                <btn btn-primary class="btn btn-tertiary ">Search</btn btn-primary>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-dynamic contact">
+    <div class="container ">
+        <div class="contact__content ">
+            <h2>Contact Us</h2>
+            <p>Do you have any questions or need help planning your next adventure? We are here to help you. Please fill
+                out the form below and we will get back to you as soon as possible.</p>
+            <form method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </form>
+        </div>
+</section>
+
+
+<div class="top-links">
+    <div class="container">
+        <div class="top-links__links">
+            <div class="top">
+                <a href="#"><i class="fa fa-phone"></i> &nbsp;+99 (0) 9999-9999-9</a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+            </div>
+            <div class="bottom">
+                <a href="#"><i class="fa fa-envelope-open-text"></i> &nbsp;Subscribe to our Newsletter</a>
+            </div>
+            <div class="right">
+                <a href="#"><i class="fa fa-search"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="scroll-to-top" onclick="topFunction()" id="toTop">
+    <i class="fa fa-chevron-up"></i>
+</div>
+
+<footer>
+    <div class="section-dynamic footer-socials">
+        <div class="container">
+            <div class="footer__social-icons">
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+            </div>
+        </div>
+    </div>
+    <section class="section-dynamic footer">
+        <div class="container">
+            <div class="footer__columns">
+                <div class="footer-column">
+                    <span class="h3">Destinations</span>
+                    <a href="#">All African Countries</a>
+                    <a href="#">Botswana</a>
+                    <a href="#">South Africa</a>
+                    <a href="#">Namibia</a>
+                    <a href="#">Tanzania</a>
+                    <a href="#">Uganda/Rwanda</a>
+                    <a href="#">Kenya</a>
+                    <a href="#">Zambia</a>
+                    <a href="#">Zimbabwe</a>
+                    <a href="#">Malawi</a>
+                    <a href="#">Congo</a>
+                    <a href="#">Mozambique</a>
+                    <a href="#">Seychelles</a>
+                    <a href="#">Mauritius</a>
+                    <a href="#">La Réunion</a>
+                    <a href="#">Madagascar</a>
+                    <a href="#">Oman</a>
+                </div>
+                <div class="footer-column">
+                    <span class="h3">Trip Types</span>
+                    <a href="#">All Safaris</a>
+                    <a href="#">Fly-in Safaris</a>
+                    <a href="#">Self-Drive Tours</a>
+                    <a href="#">Small Group Tours</a>
+                    <a href="#">Camping Safaris</a>
+                    <a href="#">Family Safaris</a>
+                    <a href="#">Gorilla Tracking</a>
+                    <a href="#">Sailing</a>
+                    <a href="#">Honeymoon Safaris</a>
+                    <a href="#">Canoe Safari</a>
+                    <a href="#">Walking Safaris</a>
+                    <a href="#">Train Travel</a>
+                    <a href="#">Kilimanjaro Climb</a>
+                    <a href="#">Golf Safari</a>
+                    <a href="#">Dream Beaches</a>
+                </div>
+                <div class="footer-column">
+                    <span class="h3">Latest News</span>
+                    <a href="#">Top Offers</a>
+                    <a href="#">News</a>
+                    <a href="#">Exhibitions & Events</a>
+                    <a href="#">Blog & Guides</a>
+                    <a href="#">Travel Stories</a>
+                    <a href="#">Webinars</a>
+                    <a href="#">Podcasts</a>
+                    <a href="#">Videos</a>
+                    <a href="#">Subscribe to Newsletter</a>
+                    <a href="#">Order Catalog</a>
+                    <a href="#">Downloads</a>
+                </div>
+                <div class="footer-column footer-contact">
+                    <span class="h3">Get in Touch</span>
+                    <p>Soul of Afrika Ltd</p>
+                    <p>123 Safari Road<br>12345 Adventure City<br>Africa</p>
+                    <p>Tel: +99 (0) 9999-9999-9<br>Fax: +99 (0) 9999-9999-9</p>
+                    <p>Email: <a href="mailto:info@soulofafrika.com">info@soulofafrika.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-dynamic footer-bottom">
+        <div class="container">
+            <div class="footer-bottom__wrapper">
+                <p class="h5">&copy; 2024 | Soul of Afrika</p>
+                <div class="footer__bottom-links">
+                    <a href="#">Imprint</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a> |
+                    <a href="#">FAQ</a> | <a href="#">Important Travel Information</a> | <a href="#">Newsletter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+
+</body>
+</html>

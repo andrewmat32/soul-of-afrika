@@ -1,0 +1,64 @@
+.content-break:has(.content-break__image) {
+    .container {
+        @include flexbox(center, center, row, null, $content-gap * 2);
+    }
+}
+
+.content-break {
+    background-color: $color-tertiary;
+    color: $color-main-dark;
+    overflow: hidden;
+    position: relative;
+
+    &__image {
+        img {
+            height: 150px;
+            mix-blend-mode: lighten;
+        }
+    }
+
+    &__content {
+        position: relative;
+        @include flexbox(center, center, column, null);
+
+        .h2 {
+            .sub-title {
+                font-size: 55px;
+            }
+        }
+
+        p {
+            //padding: $padding-content 0;
+        }
+
+    }
+
+    .navigate-down {
+        font-size: 1.5rem;
+        cursor: pointer;
+        animation: bounce 2s infinite alternate;
+    }
+
+    //&:after {
+    //    content: '';
+    //    position: absolute;
+    //    top: 0;
+    //    left: 0;
+    //    width: 50%;
+    //    height: 100%;
+    //    z-index: 1; /* Layer it above the element content */
+    //    background: repeating-linear-gradient(
+    //                    -45deg,                /* Diagonal lines */
+    //                    rgba($color-secondary, 0.3),    /* Line color with transparency */
+    //                    rgba($color-secondary, 0.3) 10px, /* Line thickness */
+    //                    rgba($color-secondary, 0) 10px, /* Space between lines */
+    //                    rgba($color-secondary, 0) 20px  /* Space thickness */
+    //    );
+    //    //opacity: 0; /* Start as fully transparent */
+    //    transition: opacity 0.5s ease-in-out; /* Fade effect */
+    //}
+}
+
+.content-break-dark {
+    background-color: $color-main-dark;
+}
