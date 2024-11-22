@@ -188,7 +188,7 @@
                     top: auto;
                     left: 0;
                     width: fit-content;
-                    margin: 0 1rem;
+                    margin: 0 auto;
 
                     &__links {
                         width: -webkit-fill-available;
@@ -197,6 +197,7 @@
 
                 @media screen and (max-width: map-get($media-queries, mobile-large)) {
                     width: -webkit-fill-available;
+                    margin: 0 1rem;
                 }
             }
 

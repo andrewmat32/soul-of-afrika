@@ -1547,12 +1547,13 @@ section.header {
         top: auto;
         left: 0;
         width: fit-content;
-        margin: 0 1rem; }
+        margin: 0 auto; }
         .navigation__burger .nav-menu__mobile .top-links__links {
           width: -webkit-fill-available; } }
     @media screen and (max-width: 550px) {
       .navigation__burger .nav-menu__mobile .top-links {
-        width: -webkit-fill-available; } }
+        width: -webkit-fill-available;
+        margin: 0 1rem; } }
     .navigation__burger .nav-menu__mobile::before {
       content: '';
       position: absolute;
