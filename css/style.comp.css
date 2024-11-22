@@ -2426,6 +2426,15 @@ footer .footer-bottom {
     left: -1px;
     z-index: 1; }
 
+.product-list-actions__filters-container {
+  opacity: 0;
+  transition: all 0.2s;
+  height: 0; }
+  .product-list-actions__filters-container-open {
+    background-color: whitesmoke;
+    opacity: 1;
+    transition: all 0.5s; }
+
 .price {
   display: flex;
   justify-content: flex-start;

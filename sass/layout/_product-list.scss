@@ -195,7 +195,18 @@
         left: -1px;
         z-index: 1;
     }
+}
 
+.product-list-actions__filters-container {
+    opacity: 0;
+    transition: all 0.2s;
+    height: 0;
+
+    &-open {
+        background-color: $color-secondary;
+        opacity: 1;
+        transition: all 0.5s;
+    }
 }
 
 .price {
