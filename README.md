@@ -1,6 +1,6 @@
 
 **Soul of Afrika**  
-A personal project designed and developed by Your Name, showcasing my expertise in modern web development and design. Soul of Afrika is a platform for booking African-themed vacations, blending vibrant design with robust functionality to reflect the beauty and diversity of African destinations.  
+A personal project designed and developed by me, showcasing my expertise in modern web development and design. Soul of Afrika is a platform for booking African-themed vacations, blending vibrant design with robust functionality to reflect the beauty and diversity of African destinations.  
 
 **Key Features and Technical Highlights**:  
 - **Advanced CSS Implementation**: Built using **SASS**, showcasing a modular, DRY (Don’t Repeat Yourself) approach to styles.  
