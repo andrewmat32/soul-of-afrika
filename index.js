@@ -42,6 +42,7 @@ function topFunction()
 function moveFiltersToMobile(el) {
     const filters = document.getElementById('product-filters');
     const mobileFilters = document.getElementById('product-filters-mobile');
+    mobileFilters.style.padding = "1rem";
     while (filters.firstChild) {
         mobileFilters.appendChild(filters.firstChild);
     }
@@ -54,6 +55,7 @@ function moveFiltersToMobile(el) {
 function moveFiltersBack(el) {
     const filters = document.getElementById('product-filters');
     const mobileFilters = document.getElementById('product-filters-mobile');
+    mobileFilters.style.padding = "0";
     while (mobileFilters.firstChild) {
         filters.appendChild(mobileFilters.firstChild);
     }

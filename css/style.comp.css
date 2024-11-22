@@ -2467,7 +2467,9 @@ footer .footer-bottom {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
-    width: unset; }
+    width: unset;
+    border-radius: var(--border-radius);
+    background-color: white; }
     @media screen and (max-width: 768px) {
       .product-list-actions__filters-container .filter {
         width: 47%; } }

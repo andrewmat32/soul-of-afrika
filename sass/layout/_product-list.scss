@@ -238,6 +238,8 @@
         min-width: 0;
         @include flexbox(space-between, flex-start, row, wrap, $content-gap );
         width: unset;
+        border-radius: $border-radius;
+        background-color: white;
 
         .filter {
 
