@@ -24,7 +24,7 @@
 
     &__listing {
         width: -webkit-fill-available;
-        @include flexbox(null, baseline, column, null, $content-gap );
+        @include flexbox(null, baseline, column, null, 2rem );
 
         .product {
             //width: -webkit-fill-available;

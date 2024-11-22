@@ -2312,7 +2312,7 @@ footer .footer-bottom {
     display: flex;
     align-items: baseline;
     flex-direction: column;
-    gap: 1rem; }
+    gap: 2rem; }
     .product-list__listing .product__image {
       position: relative;
       width: 450px;
