@@ -1540,15 +1540,19 @@ section.header {
     padding: 2rem;
     padding-top: 3rem;
     z-index: 100; }
-    .navigation__burger .nav-menu__mobile .top-links {
-      display: block;
-      bottom: 1rem;
-      top: auto;
-      left: 0;
-      width: -webkit-fill-available;
-      margin: 0 1rem; }
-      .navigation__burger .nav-menu__mobile .top-links__links {
-        width: -webkit-fill-available; }
+    @media screen and (max-width: 1024px) {
+      .navigation__burger .nav-menu__mobile .top-links {
+        display: block;
+        bottom: 1rem;
+        top: auto;
+        left: 0;
+        width: fit-content;
+        margin: 0 1rem; }
+        .navigation__burger .nav-menu__mobile .top-links__links {
+          width: -webkit-fill-available; } }
+    @media screen and (max-width: 550px) {
+      .navigation__burger .nav-menu__mobile .top-links {
+        width: -webkit-fill-available; } }
     .navigation__burger .nav-menu__mobile::before {
       content: '';
       position: absolute;

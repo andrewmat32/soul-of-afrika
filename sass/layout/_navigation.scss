@@ -182,14 +182,20 @@
             z-index: 100;
 
             .top-links {
-                display: block;
-                bottom: 1rem;
-                top: auto;
-                left: 0;
-                width: -webkit-fill-available;
-                margin: 0 1rem;
+                @media screen and (max-width: map-get($media-queries, tablet-max)) {
+                    display: block;
+                    bottom: 1rem;
+                    top: auto;
+                    left: 0;
+                    width: fit-content;
+                    margin: 0 1rem;
 
-                &__links {
+                    &__links {
+                        width: -webkit-fill-available;
+                    }
+                }
+
+                @media screen and (max-width: map-get($media-queries, mobile-large)) {
                     width: -webkit-fill-available;
                 }
             }
