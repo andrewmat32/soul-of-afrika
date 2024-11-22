@@ -73,7 +73,7 @@
                 width: 100%;
 
                 .product__card__item {
-                    @include flexbox(null, null, column, null, $content-gap );
+                    @include flexbox(null, null, column, null, 2rem );
                     border-top-right-radius: $border-radius;
                     border-top-left-radius: $border-radius;
 
