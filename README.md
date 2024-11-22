@@ -3,12 +3,24 @@ A personal project designed and developed by [Your Name], showcasing my expertis
 
 Key Features and Technical Highlights:
 
-Advanced CSS Implementation: Built using SASS, showcasing a modular, DRY (Don’t Repeat Yourself) approach to styles.
-Custom SASS Functions: Developed reusable functions to optimize design workflows and ensure consistency across components.
-PostCSS Integration: Enhanced styling with plugins for browser compatibility and modern CSS features.
-PurgeCSS Optimization: Minimized CSS bundle sizes by removing unused styles, improving load times and performance.
-Responsive Design: Fully optimized for various screen sizes, ensuring a seamless experience on both mobile and desktop.
-Custom Animations: Designed and implemented animations that bring the African aesthetic to life, emphasizing user engagement.
+Advanced CSS Implementation: 
+Built using SASS, showcasing a modular, DRY (Don’t Repeat Yourself) approach to styles.
+
+Custom SASS Functions: 
+Developed reusable functions to optimize design workflows and ensure consistency across components.
+
+PostCSS Integration: 
+Enhanced styling with plugins for browser compatibility and modern CSS features.
+
+PurgeCSS Optimization: 
+Minimized CSS bundle sizes by removing unused styles, improving load times and performance.
+
+Responsive Design: 
+Fully optimized for various screen sizes, ensuring a seamless experience on both mobile and desktop.
+
+Custom Animations: 
+Designed and implemented animations that bring the African aesthetic to life, emphasizing user engagement.
+
 This project reflects my passion for creating visually compelling and highly performant web experiences. Deployed on Vercel for blazing-fast performance, scalability, and ease of use.
 
 Why It Matters:
