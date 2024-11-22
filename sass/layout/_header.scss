@@ -126,8 +126,16 @@
     }
 
     &__content:has(.search-container) {
+        @media screen and (max-width: map-get($media-queries, popup-max)) {
+            width: 927px;
+        }
+
         @media screen and (max-width: map-get($media-queries, tablet-max)) {
-            width: max-content;
+            width: 527px;
+        }
+
+        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+            max-width: 327px;
         }
     }
 

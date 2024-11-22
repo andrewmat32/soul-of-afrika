@@ -1722,9 +1722,15 @@ section.header {
         z-index: 2;
         transform: scale(1.1);
         transition: all 0.3s ease-in-out; }
+  @media screen and (max-width: 1600px) {
+    .header__content:has(.search-container) {
+      width: 927px; } }
   @media screen and (max-width: 1024px) {
     .header__content:has(.search-container) {
-      width: max-content; } }
+      width: 527px; } }
+  @media screen and (max-width: 768px) {
+    .header__content:has(.search-container) {
+      max-width: 327px; } }
   .header__transition {
     filter: invert(1);
     position: absolute;
