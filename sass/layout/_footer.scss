@@ -1,5 +1,4 @@
 footer {
-
     .footer {
         background: url(/images/giraffe.jpg) no-repeat left center $color-main-light;
         background-blend-mode: soft-light;
@@ -7,7 +6,7 @@ footer {
         color: $color-secondary;
         position: relative;
 
-        @media screen and (max-width: map-get($media-queries, popup-max)) {
+        @media screen and (max-width: map-get($media-queries, tablet-max)) {
             background-size: cover;
         }
 
@@ -39,7 +38,11 @@ footer {
         &__columns {
             @include grid( 4 );
 
-            @media screen and (max-width: map-get($media-queries, popup-max)) {
+            @media screen and (max-width: map-get($media-queries, tablet-max)) {
+                @include grid( 2 );
+            }
+
+            @media screen and (max-width: map-get($media-queries, tablet-min)) {
                 @include grid( 1 );
             }
 
@@ -74,7 +77,11 @@ footer {
             @include flexbox( center, center, row, null, $content-gap );
             background: rgba( $color-main, 0.9 );
 
-            @media screen and (max-width: map-get($media-queries, popup-max)) {
+            @media screen and (max-width: map-get($media-queries, tablet-min)) {
+                @include flexbox( center, center, row, wrap, $content-gap );
+            }
+
+            @media screen and (max-width: map-get($media-queries, tablet-min)) {
                 @include flexbox( center, center, column, null, $content-gap );
             }
 
@@ -100,12 +107,12 @@ footer {
         &__wrapper {
             @include flexbox( space-between, center, row, null, $content-gap );
 
-            @media screen and (max-width: map-get($media-queries, popup-max)) {
+            @media screen and (max-width: map-get($media-queries, tablet-max)) {
                 @include flexbox( null, center, column, null, $content-gap );
             }
 
             .footer__bottom-links {
-                @media screen and (max-width: map-get($media-queries, popup-max)) {
+                @media screen and (max-width: map-get($media-queries, tablet-max)) {
                     text-align: justify;
                 }
             }

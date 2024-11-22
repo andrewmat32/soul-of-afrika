@@ -8,7 +8,7 @@
     color: $color-secondary;
     border: 1px solid $color-main;
 
-    @media screen and (max-width: map-get($media-queries, tablet-min)) {
+    @media screen and (max-width: map-get($media-queries, tablet-max)) {
         @include position-on-screen(fixed, auto, $padding-to-screen-edge, 0, 20px);
     }
 

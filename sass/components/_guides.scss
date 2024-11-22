@@ -12,7 +12,7 @@
         color: $color-main-dark;
         @include grid( 2 );
 
-        @media screen and (max-width: map-get($media-queries, popup-max)) {
+        @media screen and (max-width: map-get($media-queries, tablet-max)) {
             @include grid( 1 );
         }
 
@@ -61,7 +61,7 @@
                 z-index: 4;
             }
 
-            @media screen and (max-width: map-get($media-queries, popup-max)) {
+            @media screen and (max-width: map-get($media-queries, tablet-max)) {
                 @include flexbox( null, null, column, null);
 
                 img {

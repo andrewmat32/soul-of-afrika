@@ -8,12 +8,16 @@
     }
 
     .destination__card {
-        @media screen and (max-width: map-get($media-queries, popup-max)) {
-            @include grid( 1 );
+        @media screen and (max-width: map-get($media-queries, tablet-max)) {
+            @include grid( 2 );
 
             &__item {
                 height: 350px;
             }
+        }
+
+        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+            @include grid(1);
         }
     }
 
@@ -102,7 +106,11 @@
         @include flexbox(center, null, row, wrap, $content-gap);
             @include grid( 4 );
 
-        @media screen and (max-width: map-get($media-queries, popup-max)) {
+        @media screen and (max-width: map-get($media-queries, tablet-max)) {
+            @include grid( 2 );
+        }
+
+        @media screen and (max-width: map-get($media-queries, tablet-min)) {
             @include grid( 1 );
         }
     }

@@ -2,9 +2,12 @@
     @include flexbox(center, flex-end, row, wrap, $content-gap);
     width: -webkit-fill-available;
 
-    @media screen and (max-width: map-get($media-queries, tablet-min)) {
+    @media screen and (max-width: map-get($media-queries, tablet-max)) {
+        display: unset;
+
         .btn {
             width: 100%;
+            margin-top: 1rem;
         }
     }
 
@@ -12,7 +15,7 @@
         @include flexbox(center, start, column, wrap);
         flex: 1 0 0;
 
-        @media screen and (max-width: map-get($media-queries, popup-max)) {
+        @media screen and (max-width: map-get($media-queries, tablet-max)) {
             flex: 0 0 auto;
             width: 100%;
         }

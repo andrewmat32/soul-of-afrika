@@ -6,7 +6,7 @@
     z-index: 100;
     box-shadow: $shadow-md;
 
-    @media screen and (max-width: map-get($media-queries, tablet-min)) {
+    @media screen and (max-width: map-get($media-queries, tablet-max)) {
        display: none;
     }
 

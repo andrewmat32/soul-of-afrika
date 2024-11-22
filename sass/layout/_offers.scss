@@ -2,12 +2,16 @@
     color: $color-main-dark;
 
     .product__card {
-        @media screen and (max-width: map-get($media-queries, popup-max)) {
+        @media screen and (max-width: map-get($media-queries, tablet-max)) {
+            @include grid( 2 );
+        }
+
+        @media screen and (max-width: map-get($media-queries, tablet-min)) {
             @include grid( 1 );
         }
 
         &__item {
-            @media screen and (max-width: map-get($media-queries, popup-max)) {
+            @media screen and (max-width: map-get($media-queries, tablet-max)) {
                 //width: 368px;
             }
         }
