@@ -23,7 +23,7 @@
   margin-right: auto; /* 2 */
   width: 100%; /* 1 */
 
-  @media screen and (max-width: map-get($media-queries, desktop-min)) {
+  @media screen and (max-width: map-get($media-queries, popup-max)) {
     padding: 0 20px;
     width: unset;
   }

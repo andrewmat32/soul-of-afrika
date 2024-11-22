@@ -121,7 +121,7 @@
             }
         }
 
-        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+        @media screen and (max-width: map-get($media-queries, popup-max)) {
             @include flexbox(null, null, column, null, $content-gap);
         }
     }
@@ -171,7 +171,7 @@
             transition: all 0.3s ease-in-out;
             opacity: 1;
 
-            @media screen and (max-width: map-get($media-queries, tablet-min)) {
+            @media screen and (max-width: map-get($media-queries, popup-max)) {
                 @include flexbox(null, center, column, null);
             }
 
@@ -207,7 +207,7 @@
             padding: 0.5rem;
             border-radius: $border-radius;
 
-            @media screen and (max-width: map-get($media-queries, tablet-min)) {
+            @media screen and (max-width: map-get($media-queries, popup-max)) {
                 font-size: 2rem;
             }
         }

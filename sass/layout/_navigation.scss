@@ -1,12 +1,12 @@
 .navigation {
     position: relative;
-    z-index: 1000;
+    z-index: 1300;
 
     .container {
         @include container;
         @include flexbox(space-between, flex-start, null, null);
 
-        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+        @media screen and (max-width: map-get($media-queries, popup-max)) {
             @include flexbox(space-between, flex-start, null, null);
         }
     }
@@ -33,7 +33,7 @@
         height: 150px;
         //@include smoothFadingGradient(to bottom, 168, 73, 55);
 
-        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+        @media screen and (max-width: map-get($media-queries, popup-max)) {
             display: none;
         }
     }
@@ -60,7 +60,7 @@
             }
         }
 
-        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+        @media screen and (max-width: map-get($media-queries, popup-max)) {
             width: unset;
         }
 
@@ -89,7 +89,7 @@
         right: 0;
         margin: 0 auto;
 
-        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+        @media screen and (max-width: map-get($media-queries, popup-max)) {
             background-color: $color-secondary;
         }
 
@@ -97,7 +97,7 @@
             ul {
                 @include flexbox();
 
-                @media screen and (max-width: map-get($media-queries, tablet-min)) {
+                @media screen and (max-width: map-get($media-queries, popup-max)) {
                     @include flexbox(center, flex-end, column, null);
                     margin-right: 20px;
                     margin-top: 4.5rem;
@@ -118,12 +118,12 @@
                 text-decoration: none;
                 cursor: pointer;
 
-                @media screen and (max-width: map-get($media-queries, tablet-min)) {
+                @media screen and (max-width: map-get($media-queries, popup-max)) {
                     font-size: 1.3rem;
                 }
             }
 
-            @media screen and (max-width: map-get($media-queries, tablet-min)) {
+            @media screen and (max-width: map-get($media-queries, popup-max)) {
                 display: none;
             }
         }
@@ -156,7 +156,7 @@
                 font-size: 2rem;
             }
 
-            @media screen and (max-width: map-get($media-queries, tablet-min)) {
+            @media screen and (max-width: map-get($media-queries, popup-max)) {
                 @include flexbox(null, null, null, null, 10px);
             }
 

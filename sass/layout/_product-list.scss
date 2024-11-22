@@ -20,7 +20,7 @@
         //color: $color-main-dark;
         width: 250px;
 
-        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+        @media screen and (max-width: map-get($media-queries, popup-max)) {
             display: none;
         }
 
@@ -142,7 +142,7 @@
             }
         }
 
-        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+        @media screen and (max-width: map-get($media-queries, popup-max)) {
             .products {
                 width: 100%;
 

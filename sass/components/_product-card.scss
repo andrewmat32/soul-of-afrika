@@ -15,7 +15,7 @@
                 height: 250px;
                 object-fit: cover;
 
-                @media screen and (max-width: map-get($media-queries, tablet-min)) {
+                @media screen and (max-width: map-get($media-queries, popup-max)) {
                     height: 200px;
                 }
             }

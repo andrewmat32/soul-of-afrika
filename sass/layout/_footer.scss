@@ -7,7 +7,7 @@ footer {
         color: $color-secondary;
         position: relative;
 
-        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+        @media screen and (max-width: map-get($media-queries, popup-max)) {
             background-size: cover;
         }
 
@@ -39,7 +39,7 @@ footer {
         &__columns {
             @include grid( 4 );
 
-            @media screen and (max-width: map-get($media-queries, tablet-min)) {
+            @media screen and (max-width: map-get($media-queries, popup-max)) {
                 @include grid( 1 );
             }
 
@@ -74,7 +74,7 @@ footer {
             @include flexbox( center, center, row, null, $content-gap );
             background: rgba( $color-main, 0.9 );
 
-            @media screen and (max-width: map-get($media-queries, tablet-min)) {
+            @media screen and (max-width: map-get($media-queries, popup-max)) {
                 @include flexbox( center, center, column, null, $content-gap );
             }
 
@@ -100,12 +100,12 @@ footer {
         &__wrapper {
             @include flexbox( space-between, center, row, null, $content-gap );
 
-            @media screen and (max-width: map-get($media-queries, tablet-min)) {
+            @media screen and (max-width: map-get($media-queries, popup-max)) {
                 @include flexbox( null, center, column, null, $content-gap );
             }
 
             .footer__bottom-links {
-                @media screen and (max-width: map-get($media-queries, tablet-min)) {
+                @media screen and (max-width: map-get($media-queries, popup-max)) {
                     text-align: justify;
                 }
             }

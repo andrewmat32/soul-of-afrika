@@ -4,7 +4,7 @@
         @include container;
         @include flexbox( center, center, row, null, 2rem );
 
-        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+        @media screen and (max-width: map-get($media-queries, popup-max)) {
             @include flexbox( center, center, column, null, 2rem );
 
             .right-container {
@@ -45,7 +45,7 @@
             transform: scale(1.01);
         }
 
-        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+        @media screen and (max-width: map-get($media-queries, popup-max)) {
             img {
                 max-height: 300px;
             }
@@ -74,7 +74,7 @@
         max-height: 300px;
         width: 100%;
 
-        @media screen and (max-width: map-get($media-queries, tablet-min)) {
+        @media screen and (max-width: map-get($media-queries, popup-max)) {
            max-height: fit-content;
         }
     }
