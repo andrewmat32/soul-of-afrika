@@ -1,6 +1,6 @@
 .product__card {
     &__item {
-        background-color: $color-secondary;
+        background-color: white;
         position: relative;
         @include top-border;
         border-bottom-left-radius: $border-radius;
