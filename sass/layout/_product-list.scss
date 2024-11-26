@@ -23,11 +23,11 @@
     color: $color-main-dark;
 
     &__listing {
-        width: -webkit-fill-available;
-        @include flexbox(null, baseline, column, null, 2rem );
+        width: -webkit-fill-available; width: -moz-available;
+        @include flexbox(null, baseline, column, null, $content-gap );
 
         .product {
-            //width: -webkit-fill-available;
+            //width: -webkit-fill-available; width: -moz-available;
             //height: 250px;
             //@include flexbox(null, null, column, null, $content-gap );
             //box-shadow: $shadow-md;
@@ -54,7 +54,7 @@
             }
 
             &__content {
-                width: -webkit-fill-available;
+                width: -webkit-fill-available; width: -moz-available;
                 border-top-right-radius: $border-radius;
                 background-color: white;
 
@@ -90,7 +90,7 @@
                         &__image {
                             position: relative;
                             height: 250px;
-                            width: -webkit-fill-available;
+                            width: -webkit-fill-available; width: -moz-available;
                             border-top-right-radius: $border-radius;
                             border-top-left-radius: $border-radius;
 

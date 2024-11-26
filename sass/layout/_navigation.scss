@@ -191,12 +191,12 @@
                     margin: 0 auto;
 
                     &__links {
-                        width: -webkit-fill-available;
+                        width: -webkit-fill-available; width: -moz-available;
                     }
                 }
 
                 @media screen and (max-width: map-get($media-queries, mobile-large)) {
-                    width: -webkit-fill-available;
+                    width: -webkit-fill-available; width: -moz-available;
                     margin: 0 1rem;
                 }
             }

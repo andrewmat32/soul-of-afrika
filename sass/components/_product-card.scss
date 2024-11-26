@@ -11,7 +11,7 @@
             margin-bottom: 1rem;
 
             img {
-                width: -webkit-fill-available;
+                width: -webkit-fill-available; width: -moz-available;
                 height: 250px;
                 object-fit: cover;
 
@@ -49,7 +49,7 @@
 
         .btn {
             position: absolute;
-            width: -webkit-fill-available;
+            width: -webkit-fill-available; width: -moz-available;
             bottom: 0;
             border-top-left-radius: 0;
             border-top-right-radius: 0;
@@ -148,7 +148,7 @@
 
                 .btn {
                     position: relative;
-                    width: -webkit-fill-available;
+                    width: -webkit-fill-available; width: -moz-available;
                     bottom: 0;
                     border-radius: 5px;
 

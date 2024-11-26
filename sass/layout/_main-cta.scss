@@ -8,10 +8,10 @@
             @include flexbox( center, center, column, null, 2rem );
 
             .right-container {
-                width: -webkit-fill-available;
+                    width: -webkit-fill-available; width: -moz-available;
 
                 .btn {
-                    width: -webkit-fill-available;
+                    width: -webkit-fill-available; width: -moz-available;
                 }
             }
         }
@@ -34,7 +34,7 @@
         img {
             max-height: 600px;
             object-fit: cover;
-            width: -webkit-fill-available;
+            width: -webkit-fill-available; width: -moz-available;
             object-position: top;
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;

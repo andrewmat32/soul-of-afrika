@@ -72,7 +72,7 @@
 
         &-images {
             @include flexbox(space-between, null, row, null, $content-gap);
-            width: -webkit-fill-available;
+            width: -webkit-fill-available; width: -moz-available;
             margin-top: $content-gap;
 
             &__image {

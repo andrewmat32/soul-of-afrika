@@ -1,6 +1,6 @@
 .search-container {
     @include flexbox(center, flex-end, row, wrap, $content-gap);
-    width: -webkit-fill-available;
+    width: -webkit-fill-available; width: -moz-available;
 
     @media screen and (max-width: map-get($media-queries, tablet-max)) {
         display: unset;

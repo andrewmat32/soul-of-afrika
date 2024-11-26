@@ -805,7 +805,8 @@ body.no-scroll {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
-  width: -webkit-fill-available; }
+  width: -webkit-fill-available;
+  width: -moz-available; }
   @media screen and (max-width: 1024px) {
     .search-container {
       display: unset; }
@@ -863,6 +864,7 @@ body.no-scroll {
     margin-bottom: 1rem; }
     .product__card__item__image img {
       width: -webkit-fill-available;
+      width: -moz-available;
       height: 250px;
       object-fit: cover; }
       @media screen and (max-width: 1024px) {
@@ -892,6 +894,7 @@ body.no-scroll {
   .product__card__item .btn {
     position: absolute;
     width: -webkit-fill-available;
+    width: -moz-available;
     bottom: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
@@ -961,6 +964,7 @@ body.no-scroll {
         .product-list__listing .products .product__card__item__details__actions .btn {
           position: relative;
           width: -webkit-fill-available;
+          width: -moz-available;
           bottom: 0;
           border-radius: 5px; }
           .product-list__listing .products .product__card__item__details__actions .btn:hover {
@@ -1277,7 +1281,8 @@ body.no-scroll {
       .contact__content a:hover {
         color: whitesmoke; }
     .contact__content form {
-      width: -webkit-fill-available; }
+      width: -webkit-fill-available;
+      width: -moz-available; }
     .contact__content input,
     .contact__content textarea {
       padding: 1rem;
@@ -1549,10 +1554,12 @@ section.header {
         width: fit-content;
         margin: 0 auto; }
         .navigation__burger .nav-menu__mobile .top-links__links {
-          width: -webkit-fill-available; } }
+          width: -webkit-fill-available;
+          width: -moz-available; } }
     @media screen and (max-width: 550px) {
       .navigation__burger .nav-menu__mobile .top-links {
         width: -webkit-fill-available;
+        width: -moz-available;
         margin: 0 1rem; } }
     .navigation__burger .nav-menu__mobile::before {
       content: '';
@@ -1692,6 +1699,7 @@ section.header {
       flex-direction: row;
       gap: 1rem;
       width: -webkit-fill-available;
+      width: -moz-available;
       margin-top: 1rem; }
       .header__content-images__image {
         position: relative;
@@ -1928,7 +1936,8 @@ section.header {
     font-size: 20px;
     display: flex;
     align-items: center;
-    width: -webkit-fill-available; }
+    width: -webkit-fill-available;
+    width: -moz-available; }
   .popup__content .description {
     font-family: "Ubuntu";
     color: #521c20;
@@ -2109,9 +2118,11 @@ footer .footer-bottom {
         flex-direction: column;
         gap: 2rem; }
         .main-cta .container .right-container {
-          width: -webkit-fill-available; }
+          width: -webkit-fill-available;
+          width: -moz-available; }
           .main-cta .container .right-container .btn {
-            width: -webkit-fill-available; } }
+            width: -webkit-fill-available;
+            width: -moz-available; } }
 
 .main-cta .left-container {
   flex: 0 0 50%;
@@ -2133,6 +2144,7 @@ footer .footer-bottom {
     max-height: 600px;
     object-fit: cover;
     width: -webkit-fill-available;
+    width: -moz-available;
     object-position: top;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -2309,10 +2321,11 @@ footer .footer-bottom {
   color: #340c11; }
   .product-list__listing {
     width: -webkit-fill-available;
+    width: -moz-available;
     display: flex;
     align-items: baseline;
     flex-direction: column;
-    gap: 2rem; }
+    gap: 1rem; }
     .product-list__listing .product__image {
       position: relative;
       width: 450px;
@@ -2335,6 +2348,7 @@ footer .footer-bottom {
         border-bottom-left-radius: var(--border-radius); }
     .product-list__listing .product__content {
       width: -webkit-fill-available;
+      width: -moz-available;
       border-top-right-radius: var(--border-radius);
       background-color: white; }
       .product-list__listing .product__content h3 {
@@ -2361,6 +2375,7 @@ footer .footer-bottom {
               position: relative;
               height: 250px;
               width: -webkit-fill-available;
+              width: -moz-available;
               border-top-right-radius: var(--border-radius);
               border-top-left-radius: var(--border-radius); }
               .product-list__listing .products .product__card__item__content__image img {
